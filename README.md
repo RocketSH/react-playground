@@ -5,7 +5,7 @@ This repo is for self-learning purpose, and will consume a Rails api from
 ### Usage: 
 - API:
   - download repo: https://github.com/RocketSH/graphql-playground 
-  - run `rails server` after install dependencies and created db (we need this api serves online to fetch data from it)
+  - run `rails server` after installed dependencies and created db (we need this api serves online for data fetching from it)
 
 - This frondend repo:
   - download repo and install yarn

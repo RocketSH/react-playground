@@ -1,4 +1,7 @@
+import clsx from "clsx";
+import "../css/product-list.sass"
 import { gql, useQuery } from "@apollo/client"
+const table = "table"
 
 const PRODUCT_LIST = gql`
       query {
@@ -23,7 +26,7 @@ export default function ProductList() {
   );
 
   return (
-    <table>
+    <table className={clsx(table)}>
       <caption>A list of reserved books</caption>
       <thead>
         <tr>
