@@ -1,6 +1,5 @@
 import Shark from "../img/small-profile.jpeg"
 import "../css/main.css"
-import Items from ""
 
 export default function Welcome() {
   return (
