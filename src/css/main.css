@@ -7,6 +7,7 @@ body {
 }
 
 .wrapper {
+  margin: 2.5rem 5rem;
   background-color: #fff9e6;
   padding: 20px;
   border-radius: 10px;
@@ -16,9 +17,17 @@ body {
 h1 {
   color: #8873be;
 }
+p {
+  color: gray;
+}
 
 table {
   border: collapse;
+}
+
+table caption{
+  font-size: larger;
+  padding: 1rem 0;
 }
 
 td, th {
