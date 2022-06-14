@@ -1,9 +1,14 @@
 # React-Playground
 
-This repo is for self-learning purpose, and will consume rails api from https://github.com/RocketSH/graphql-playground 
+This repo is for self-learning purpose, and will consume a Rails api from
 
 ### Usage: 
-- download repo, install yarn
-- run `yarn` `yarn dev`
-- open localhost:{your port} in browser, you will see a page with wording: Welcome To React Playground
+- API:
+  - download repo: https://github.com/RocketSH/graphql-playground 
+  - run `rails server` after install dependencies and created db (we need this api serves online to fetch data from it)
+
+- This frondend repo:
+  - download repo and install yarn
+  - run `yarn` `yarn dev`
+  - open localhost:{your port} in browser, you will see a page with a book list
   

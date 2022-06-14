@@ -1,4 +1,4 @@
-import "../css/main.css"
+import "../css/main.sass"
 import ProductList from "./ProductList"
 
 export default function Welcome() {

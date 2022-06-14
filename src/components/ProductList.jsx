@@ -14,11 +14,11 @@ export default function ProductList() {
   const { loading, error, data } = useQuery(PRODUCT_LIST);
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :</p>;
-  const listItems = data.items.map(( item, index ) =>
-    <tr key={index}>
-      <td><img src={item.imageUrl} alt={`disply book cover of ${item.title}`} /></td>
-      <td>{item.title}</td>
-      <td>{item.description}</td>
+  const listItems = data.items.map(({title, imageUrl, description }) =>
+    <tr key={title}>
+      <td><img src={imageUrl} alt={`disply book cover of ${title}`} /></td>
+      <td>{title}</td>
+      <td>{description}</td>
     </tr>
   );
 
