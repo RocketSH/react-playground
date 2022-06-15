@@ -1,4 +1,4 @@
-import Welcome from "./components/Welcome"
+import Welcome from "./components/WelcomePage"
 import {
   ApolloClient,
   InMemoryCache,
