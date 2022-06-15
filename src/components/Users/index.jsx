@@ -1,6 +1,7 @@
 import styles from "../WelcomePage/Welcome.module.sass"
 import { gql, useQuery } from "@apollo/client"
 import Nav from "../Nav"
+import CreateUser from "./createUser";
 
 const USER_LIST = gql`
       query {
@@ -9,7 +10,6 @@ const USER_LIST = gql`
         }
       }
     `;
-
 
 export default function Users() {
   const { loading, error, data } = useQuery(USER_LIST);
@@ -27,6 +27,7 @@ export default function Users() {
         <h1>Current User List:</h1>
         {Users}
       </div>
+      <CreateUser />
     </>
   )
 }
