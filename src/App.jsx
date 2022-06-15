@@ -1,21 +1,11 @@
 import Welcome from "./components/WelcomePage"
-import {
-  ApolloClient,
-  InMemoryCache,
-  ApolloProvider,
-} from "@apollo/client";
-
-const client = new ApolloClient({
-  uri: "http://127.0.0.1:3000/graphql",
-  cache: new InMemoryCache(),
-});
+import Nav from "./components/Nav"
 
 function App() {
   return (
     <>
-      <ApolloProvider client={client}>
-        <Welcome />
-      </ApolloProvider>
+      <Nav />
+      <Welcome />
     </>
   )
 }
